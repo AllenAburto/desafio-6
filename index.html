@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Monedas</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Monedas</h1>
+    <label for="valor">Cantidad en pesos chilenos:</label>
+    <input type="number" id="valor" placeholder="Ingrese cantidad en pesos" min="0">
+    <br>
+    <label for="opciones">Convertir a:</label>
+    <select id="opciones">
+      <option value="1">UF</option>
+      <option value="2">UTM</option>l
+      <option value="3">Dolar</option>
+    </select>
+    <br>
+    <button onclick="convertir()">Convertir</button>
+    <p id="resultado"></p>
+  </div>
+  <div id="grafico" class="grafico">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
